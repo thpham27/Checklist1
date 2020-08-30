@@ -78,12 +78,11 @@
 				D65B7ABA24F5EC0100807912 /* ChecklistItem.swift */,
 				D65B7AAA24F4BEE600807912 /* ChecklistView.swift */,
 				D65B7ABE24F6041200807912 /* EditChecklistItemView.swift */,
+				D65B7AC024F6F8A200807912 /* NewChecklistItemView.swift */,
 				D65B7AC424F758D800807912 /* Extensions */,
 				D65B7AB424F4BEE700807912 /* Info.plist */,
 				D65B7AB124F4BEE700807912 /* LaunchScreen.storyboard */,
-				D65B7AC024F6F8A200807912 /* NewChecklistItemView.swift */,
 				D65B7AAE24F4BEE700807912 /* Preview Content */,
-				D65B7AC224F70BCF00807912 /* RowView.swift */,
 				D65B7AA824F4BEE600807912 /* SceneDelegate.swift */,
 			);
 			path = Checklist;
@@ -92,6 +91,7 @@
 		D65B7AAE24F4BEE700807912 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				D65B7AC224F70BCF00807912 /* RowView.swift */,
 				D65B7AAF24F4BEE700807912 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";

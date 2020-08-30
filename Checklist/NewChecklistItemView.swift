@@ -21,6 +21,7 @@ struct NewChecklistItemView: View {
                 var newChecklistItem = ChecklistItem(name: self.newItemName)
                 self.checklist.items.append(newChecklistItem)
                 self.checklist.printChecklistContents()
+                self.checklist.saveListItem()
                 self.presentationMode.wrappedValue.dismiss()
             }) {
             HStack {

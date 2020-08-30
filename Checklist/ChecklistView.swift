@@ -21,23 +21,24 @@ struct ChecklistView: View {
             List {
                 ForEach(checklist.items) { index in
                     RowView(checklistItem: self.$checklist.items[index])
-                    }
+                }
                 
-                    
-            .onDelete(perform: checklist.deleteListItem)
-            .onMove(perform: checklist.moveListItem)
-            
+                
+                .onDelete(perform: checklist.deleteListItem)
+                .onMove(perform: checklist.moveListItem)
+                
             }
             .navigationBarItems(
-                leading: Button(action: { self.newChecklistItemViewIsVisible  = true }) {
-                        Image(systemName: "plus")
-                    },
-             trailing: EditButton())
+                leading: Button(action: { self.newChecklistItemViewIsVisible = true }) {
+                Image(systemName: "plus")
+            },
+            trailing: EditButton())
             .navigationBarTitle("Checklist", displayMode: .inline)
             .onAppear() {
             self.checklist.printChecklistContents()
-                self.checklist.saveListItems()
-        }
+                self.checklist.saveListItem()
+                
+            }
     }
         
         .sheet(isPresented: $newChecklistItemViewIsVisible) {
@@ -47,16 +48,13 @@ struct ChecklistView: View {
     
     //Methods
     //=========
-    
-    
 }
-
-//Preview
-//=========
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ChecklistView()
+    //Preview
+    //=========
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ChecklistView()
+        }
     }
-}
-
+    
 

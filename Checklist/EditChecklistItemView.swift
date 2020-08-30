@@ -13,9 +13,6 @@ struct EditChecklistItemView: View {
     //Properties
     //==========
     
-    struct EditChecklistItemView:  View {
-        
-    }
     @Binding var checklistItem: ChecklistItem
     var body: some View {
         Form {
